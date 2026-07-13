@@ -14,6 +14,7 @@ export default defineConfig({
         todolist: "todolist.html",
         kegiatan: "kegiatan.html",
         table: "table.html",
+        contact: "contact.html",
       },
     },
   },
