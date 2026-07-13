@@ -1,3 +1,6 @@
+// use css for styling component
+import "./main.css";
+
 // nested component
 // we can create component in one file and use it in another component or root parent component
 // remember for use children props this is reserved keyword that using for render any other component jsx inside the parent component
