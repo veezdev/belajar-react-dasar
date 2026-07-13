@@ -8,6 +8,8 @@ import ButtonSaya from "../button/ButtonSaya";
 import Toolbar from "../button/Toolbar";
 import SearchForm from "../form/SearchForm";
 import Counter from "../counter/Counter";
+import SnapshotSalah from "../counter/SnapshotSalah";
+import SnapshotBenar from "../counter/SnapshotBenar";
 
 // react component for render in root file
 createRoot(document.getElementById("root")).render(
@@ -51,6 +53,16 @@ createRoot(document.getElementById("root")).render(
       <hr />
       <Counter />
       <Counter />
+
+      {/* Snapshot */}
+      {/* snapshot is a concept in React that refers to render specific element in a particular state */}
+      {/* for more detail you can read the powerpoint or other resource */}
+      <hr />
+      <h2>Snapshot salah</h2>
+      <SnapshotSalah />
+
+      <h2>Snapshot benar</h2>
+      <SnapshotBenar />
     </Container>
   </StrictMode>,
 );
