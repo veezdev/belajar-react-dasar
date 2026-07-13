@@ -6,6 +6,7 @@ import AlertButton from "../button/AlertButton";
 import MyButton from "../button/MyButton";
 import ButtonSaya from "../button/ButtonSaya";
 import Toolbar from "../button/Toolbar";
+import SearchForm from "../form/SearchForm";
 
 // react component for render in root file
 createRoot(document.getElementById("root")).render(
@@ -35,6 +36,13 @@ createRoot(document.getElementById("root")).render(
           console.log("Clicked");
         }}
       />
+
+      {/* Event Prevent Default */}
+      {/* Event prevent default is the mechanism by which we can prevent the default behavior of an event from occurring */}
+      {/* like if we have a form and we want to handle the submit event for the form without reloading the page */}
+      {/* so we can use event.preventDefault() in the onClick event handler for the button */}
+      <h1>Search Form</h1>
+      <SearchForm />
     </Container>
   </StrictMode>,
 );
