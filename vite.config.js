@@ -15,6 +15,7 @@ export default defineConfig({
         kegiatan: "kegiatan.html",
         table: "table.html",
         contact: "contact.html",
+        task: "task.html",
       },
     },
   },
