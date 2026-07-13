@@ -7,6 +7,7 @@ import MyButton from "../button/MyButton";
 import ButtonSaya from "../button/ButtonSaya";
 import Toolbar from "../button/Toolbar";
 import SearchForm from "../form/SearchForm";
+import Counter from "../counter/Counter";
 
 // react component for render in root file
 createRoot(document.getElementById("root")).render(
@@ -43,6 +44,13 @@ createRoot(document.getElementById("root")).render(
       {/* so we can use event.preventDefault() in the onClick event handler for the button */}
       <h1>Search Form</h1>
       <SearchForm />
+
+      {/* Hooks (state) */}
+      {/* state is a variable that holds data that can change over time like increment counter or save data for other component */}
+      {/* state also isolated each other (will not effect other state event same component) */}
+      <hr />
+      <Counter />
+      <Counter />
     </Container>
   </StrictMode>,
 );
