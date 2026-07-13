@@ -12,6 +12,7 @@ export default defineConfig({
         index: "index.html",
         hello_world: "hello-world.html",
         todolist: "todolist.html",
+        kegiatan: "kegiatan.html",
       },
     },
   },
