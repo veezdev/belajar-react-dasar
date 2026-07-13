@@ -13,9 +13,20 @@ const HelloWorld = () => {
 
 // we can create multiple component in one file
 export const ParagraphHelloWorld = () => {
+  // script js in component and render in jsx component
+  const text = "Selamat belajar react dasar semuanya";
   return (
     <div>
-      <p>Selamat belajar react dasar</p>
+      <p
+        // if we wanna create object attribute directly in tag we can put like this below
+        style={{
+          fontFamily: "Arial, sans-serif",
+          fontSize: "16px",
+          color: "darkslategray",
+        }}
+      >
+        {text.toLowerCase()}
+      </p>
     </div>
   );
 };
