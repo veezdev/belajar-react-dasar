@@ -11,6 +11,7 @@ export default defineConfig({
       input: {
         index: "index.html",
         hello_world: "hello-world.html",
+        todolist: "todolist.html",
       },
     },
   },
