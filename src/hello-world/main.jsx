@@ -5,6 +5,7 @@ import Container from "./Container";
 import AlertButton from "../button/AlertButton";
 import MyButton from "../button/MyButton";
 import ButtonSaya from "../button/ButtonSaya";
+import Toolbar from "../button/Toolbar";
 
 // react component for render in root file
 createRoot(document.getElementById("root")).render(
@@ -24,6 +25,16 @@ createRoot(document.getElementById("root")).render(
       {/* Event Object */}
       {/* Button component from button/ButtonSaya.jsx for reading event object from props children */}
       <ButtonSaya text="Click Me" message="Hello, World!" />
+
+      {/* Event Propagation */}
+      {/* Event propagation is the mechanism by which events are handled in the DOM for stopping the event from bubbling up to parent elements */}
+      {/* like if we have a button inside a div and we want to handle the click event for the button without triggering the click event for the div */}
+      <Toolbar
+        onClick={(e) => {
+          e.stopPropagation();
+          console.log("Clicked");
+        }}
+      />
     </Container>
   </StrictMode>,
 );
