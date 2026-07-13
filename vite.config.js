@@ -13,6 +13,7 @@ export default defineConfig({
         hello_world: "hello-world.html",
         todolist: "todolist.html",
         kegiatan: "kegiatan.html",
+        table: "table.html",
       },
     },
   },
