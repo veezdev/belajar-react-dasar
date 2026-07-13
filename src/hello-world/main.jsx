@@ -4,6 +4,7 @@ import HelloWorld from "./HelloWorld";
 import Container from "./Container";
 import AlertButton from "../button/AlertButton";
 import MyButton from "../button/MyButton";
+import ButtonSaya from "../button/ButtonSaya";
 
 // react component for render in root file
 createRoot(document.getElementById("root")).render(
@@ -19,6 +20,10 @@ createRoot(document.getElementById("root")).render(
       {/* MyButton component from button/MyButton.jsx for reading event handler from props children */}
       {/* because the name in props using onSmash so we can pass a function with name onSmash and we can put the logic immediately or in body script function */}
       <MyButton text={"Klik saya"} onSmash={() => alert("Button clicked!")} />
+
+      {/* Event Object */}
+      {/* Button component from button/ButtonSaya.jsx for reading event object from props children */}
+      <ButtonSaya text="Click Me" message="Hello, World!" />
     </Container>
   </StrictMode>,
 );
