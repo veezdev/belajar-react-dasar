@@ -19,6 +19,7 @@ export default defineConfig({
         tugas: "tugas.html",
         hitung: "hitung.html",
         note: "note.html",
+        profile: "profile.html",
       },
     },
   },
