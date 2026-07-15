@@ -18,8 +18,14 @@ function HitungApp2() {
       {/* whenever we use this it won't reset the state */}
       {show2 ? <Hitung2 name="Component 1" /> : <Hitung2 name="Component 2" />}
       <br />
-      <input type="checkbox" onChange={handleShowCounter2} value={show2} /> Show
-      Counter Component Name
+      <input
+        type="checkbox"
+        onChange={handleShowCounter2}
+        value="counter"
+        checked={show2}
+      />{" "}
+      Change counter name (checked will display Component 1, unchecked will
+      display Component 2)
     </div>
   );
 }

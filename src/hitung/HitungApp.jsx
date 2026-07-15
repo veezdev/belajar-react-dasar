@@ -17,8 +17,13 @@ function HitungApp() {
       {/* Display state when checkbox is checked, and undisplay when unchecked */}
       {show && <Hitung />}
       <br />
-      <input type="checkbox" onChange={handleShowCounter} value={show} /> Show
-      Counter
+      <input
+        type="checkbox"
+        onChange={handleShowCounter}
+        value="counter"
+        checked={show}
+      />{" "}
+      Show Counter
     </div>
   );
 }
