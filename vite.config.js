@@ -17,6 +17,7 @@ export default defineConfig({
         contact: "contact.html",
         task: "task.html",
         tugas: "tugas.html",
+        hitung: "hitung.html",
       },
     },
   },
